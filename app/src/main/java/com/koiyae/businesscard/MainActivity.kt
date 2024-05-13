@@ -139,7 +139,7 @@ fun Foot(modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun BusinessCardPreview() {
     BusinessCardTheme {
         BusinessCard()
     }
