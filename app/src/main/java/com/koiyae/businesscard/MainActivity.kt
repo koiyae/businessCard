@@ -40,7 +40,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             BusinessCardTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
+                    BusinessCard(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -50,7 +50,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(modifier: Modifier = Modifier) {
+fun BusinessCard(modifier: Modifier = Modifier) {
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -141,6 +141,6 @@ fun Foot(modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     BusinessCardTheme {
-        Greeting()
+        BusinessCard()
     }
 }
